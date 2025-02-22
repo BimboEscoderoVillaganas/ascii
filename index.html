@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ascii_image (1).png" type="image/x-icon">
+    <title>Image to ASCII Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image to ASCII Converter</h1>
+        <p>Upload an image to transform it into ASCII art.</p>
+
+        <div class="file-upload">
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput">Choose an Image</label>
+        </div>
+
+        <div class="color-picker">
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" value="#ffffff">
+            
+            <label for="textColor">Text Color:</label>
+            <input type="color" id="textColor">
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>ASCII Output</h2>
+                <button class="download-btn" onclick="downloadAsciiImage()">Download</button>
+            </div>
+            <div class="ascii-container" id="asciiContainer">
+                <pre id="asciiOutput">Upload an image...</pre>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="canvas" style="display: none;"></canvas>
+
+    <footer style="text-align: center; padding: 10px; background: #333; color: white; position: fixed; width: 100%; bottom: 0;">
+        © <span id="year"></span> Bimbo Villaganas. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
