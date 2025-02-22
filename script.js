@@ -101,4 +101,15 @@ const chars = "@#S%?*+;:,.";
         link.href = canvas.toDataURL();
         link.click();
     }
+    
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            const loadingScreen = document.getElementById('loading-screen');
+            const mainContent = document.getElementById('main-content');
+        
+            loadingScreen.style.display = 'none';
+            mainContent.style.display = 'block';
+        }, 5000); // 5 seconds
+        });
+                
     document.getElementById("year").textContent = new Date().getFullYear();
