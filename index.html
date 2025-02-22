@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <img src="https://i.pinimg.com/originals/08/cc/96/08cc961c1ded28ea324430f570c4c3cf.gif" alt="Loading Animation" class="loading-gif">
+        <h3 class="loading-text">Loading...</h3>
+    </div>
+
     <div class="container">
         <h1>Image to ASCII Converter</h1>
         <p>Upload an image to transform it into ASCII art.</p>
@@ -19,7 +25,7 @@
         </div>
 
         <div class="color-picker">
-            <label for="bgColor">Background Color:</label>
+            <label for="bgColor">BG Color:</label>
             <input type="color" id="bgColor" value="#ffffff">
             
             <label for="textColor">Text Color:</label>
@@ -44,5 +50,6 @@
     </footer>
 
     <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
